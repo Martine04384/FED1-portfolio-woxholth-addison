@@ -1,4 +1,4 @@
-# FED1 - Portfolio
+# FED1 Portfolio Course Assignment
 
 ![Portfolio homepage](./assets/)
 
@@ -19,23 +19,29 @@ This portfolio was created as the final submission for the first year of the Fro
 
 ## Installing
 
-To clone the repository:
-gh repo clone
+To clone the repository: gh repo clone
 
 ## Running
 
-This is a static project. To view it locally: 1. Open the project folder 2. Open the index.html file in your browser
+This is a static project — no installation or build tools are required.
 
-You can also view the live version here:
+To run the site locally:
+
+1. Open the project folder
+2. Open `index.html` in your browser
+
+You can also view the live version here:  
+[Live site on GitHub Pages]
 
 ## Contributing
 
-This is a student project created for assessment purposes. Contributions are not accepted, but feel free to fork the code for learning.
-
-⸻
+This is a student project and is not accepting contributions, but feel free to fork the repo for learning purposes.
 
 ## Contact
 
-My GitHub
+[My GitHub](https://github.com/martine04384)
 
 ## Acknowledgments
+
+Thanks to Noroff for the project brief and assets.
+Code reviews and feedback from instructors and peers.
