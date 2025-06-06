@@ -36,6 +36,7 @@ h2 {
 
 h3 {
   font-size: 20px;
+  letter-spacing: 5px;
 }
 
 p {
@@ -228,7 +229,6 @@ footer {
 
   h2 {
     font-size: 80px;
-    letter-spacing: 5px;
   }
 
   h3 {
@@ -263,11 +263,11 @@ footer {
   }
 
   /* General styling project, about, contact */
-  .projects,
-  .about {
+  .projects {
     padding: 20px;
   }
 
+  .about,
   .contact {
     padding: 20px 20px 80px 20px;
   }
@@ -311,11 +311,11 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-  .projects,
-  .about {
+  .projects {
     padding: 40px;
   }
 
+  .about,
   .contact {
     padding: 40px 40px 80px 40px;
   }
