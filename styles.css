@@ -6,51 +6,50 @@
   box-sizing: inherit;
 }
 
-main {
-  margin: 0px auto;
+/* Font */
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-  text-align: center;
-  color: var(--text-color);
-  font-family: "Space Grotesk", sans-serif;
+h3 {
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   letter-spacing: 5px;
   margin: 0 auto;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 5px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 p {
-  font-size: 20px;
-  text-align: center;
-  color: var(--text-color);
-  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* Nav*/
 nav {
-  color: var(--color-text);
-  text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 5px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -58,6 +57,13 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 nav ul li:hover {
@@ -66,33 +72,45 @@ nav ul li:hover {
 
 /* Hero section */
 .hero {
-  height: 90vh;
+  min-height: 70vh;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Projects */
+.hero h2 {
+  font-size: 30px;
+}
 
+/* Projects */
 .projects {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  margin: 60px auto;
 }
 
-article {
-  background-color: var(--background-color);
+.projects h2,
+.about h2,
+.contact h2 {
+  align-self: center;
+}
+
+.project-card {
   border-radius: 20px;
-  padding: 0px;
+  padding-top: 0px;
   text-align: center;
   width: 100%;
+  margin: 40px auto;
+}
+
+.project-card p {
+  max-width: 400px;
   margin: 20px auto;
 }
 
-article a {
+.project-card a {
   display: inline-block;
 
   border: 2px solid black;
@@ -100,7 +118,7 @@ article a {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
   padding: 10px;
-  margin: 40px 40px;
+  margin: 20px 10px;
 
   text-align: center;
   text-decoration: none;
@@ -111,13 +129,13 @@ article a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-article a:hover {
-  transform: scale(1.5);
+.project-card a:hover {
+  transform: scale(1.2);
 }
 
 .image-container-mobile {
-  height: 800px;
-  max-width: 375px;
+  height: 400px;
+  max-width: 200px;
   overflow: hidden;
   padding-bottom: 0px;
   margin: 0 auto;
@@ -129,32 +147,107 @@ article a:hover {
 .image-container-mobile img {
   height: 100%;
   width: 100%;
+  object-fit: fill;
+}
+
+/* About */
+.about {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about p,
+.contact p {
+  text-align: left;
+  width: 250px;
+}
+
+.profile-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-image img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
-/* Breakpoints */
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 150px;
-    letter-spacing: 10px;
+/* Code for animation from Chat-GPT*/
+.email {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 800;
+  animation: toggleItalic 2s infinite;
+}
+
+@keyframes toggleItalic {
+  0%,
+  100% {
+    font-style: normal;
+  }
+  50% {
+    font-style: italic;
   }
 }
 
-@media screen and (max-width: 1023px) {
+/*Footer */
+footer {
+  padding: 40px;
+  background-color: var(--background-color);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 899px) {
+  /*Project img */
   .desktop {
     display: none;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
+  /* Font */
+  h1 {
+    font-size: 150px;
+    letter-spacing: 10px;
+  }
+
+  h2 {
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  /* Project img */
+
   .mobile {
     display: none;
   }
 
   .image-container {
-    height: 450px;
-    width: 800px;
     overflow: hidden;
     padding: 0px;
     border: 8px solid black;
@@ -166,6 +259,93 @@ article a:hover {
   .image-container img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
+  }
+
+  /* General styling project, about, contact */
+  .projects,
+  .about {
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px 20px 80px 20px;
+  }
+
+  .projects h2,
+  .about h2,
+  .contact h2 {
+    align-self: start;
+    margin-left: 20px;
+  }
+
+  .about,
+  .contact {
+    align-items: start;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1439px) {
+  .image-container {
+    height: 350px;
+    width: 500px;
+  }
+
+  .about p,
+  .contact p {
+    width: 500px;
+    margin-left: 20px;
+  }
+
+  .profile-image {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects,
+  .about {
+    padding: 40px;
+  }
+
+  .contact {
+    padding: 40px 40px 80px 40px;
+  }
+
+  .projects h2,
+  .about h2,
+  .contact h2 {
+    margin-left: 40px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    margin: 0 40px;
+  }
+
+  .image-container {
+    height: 250px;
+    width: 400px;
+  }
+
+  .about p,
+  .contact p {
+    width: 600px;
+    margin-left: 40px;
+  }
+
+  .profile-image {
+    height: 400px;
+    width: 400px;
   }
 }
