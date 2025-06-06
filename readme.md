@@ -1,6 +1,6 @@
 # FED1 Portfolio Course Assignment
 
-![Portfolio homepage](./assets/)
+![Portfolio homepage](./assets/screenshot-portfolio.jpg)
 
 ## Description
 
@@ -31,7 +31,7 @@ To run the site locally:
 2. Open `index.html` in your browser
 
 You can also view the live version here:  
-[Live site on GitHub Pages]
+[Live site on GitHub Pages](https://martine04384.github.io/FED1-portfolio-woxholth-addison/)
 
 ## Contributing
 
