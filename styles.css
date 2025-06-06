@@ -21,8 +21,8 @@ h5 {
 }
 
 h1 {
-  font-size: 150px;
-  letter-spacing: 10px;
+  font-size: 70px;
+  letter-spacing: 5px;
   margin: 0 auto;
 }
 
@@ -133,6 +133,13 @@ article a:hover {
 }
 
 /* Breakpoints */
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 150px;
+    letter-spacing: 10px;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .desktop {
