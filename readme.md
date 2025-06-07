@@ -19,7 +19,7 @@ This portfolio was created as the final submission for the first year of the Fro
 
 ## Installing
 
-To clone the repository: gh repo clone
+To clone the repository: gh repo clone Martine04384/FED1-portfolio-woxholth-addison
 
 ## Running
 
